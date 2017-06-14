@@ -37,3 +37,17 @@ currentFrame.plot()
 ```
 
 ![alt tag](https://github.com/ft-interactive/g-xaxisLinear/blob/master/images/default.png)
+
+Set the <b>.range()</b> and the <b>.ticksize()</b> to the dimensions of the current frame so that the axis fits correctly
+
+```
+let myXAxis = gAxis.xaxisLinear;
+
+myXAxis
+    .range([0,currentFrame.dimension().width])
+    .tickSize(currentFrame.dimension().height);
+
+currentFrame.plot()
+	.call(myXAxis);
+```
+![alt tag](https://github.com/ft-interactive/g-xaxisLinear/blob/master/images/position.png)
