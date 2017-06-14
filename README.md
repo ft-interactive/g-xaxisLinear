@@ -35,3 +35,5 @@ let myXAxis = gAxis.xaxisLinear;
 currentFrame.plot()
 	.call(myXAxis);
 ```
+
+![alt tag](https://github.com/ft-interactive/g-yaxislinear/blob/master/images/default.png)
