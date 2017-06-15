@@ -68,7 +68,9 @@ currentFrame.plot()
 
 ## Examples
 
-### Nember of ticks
+### Number of ticks
+
+<b> .range() </b> of zero to 100 with 10 ticks specified. This demonstrates that d3 can and does overwrite this value. Thre are 11 ticks on this axis including the zero value and the d3has worked out the correct interval spacing.
 
 ```
 let myXAxis = gAxis.xaxisLinear;
@@ -83,6 +85,24 @@ currentFrame.plot()
 ```
 
 ![alt tag](https://github.com/ft-interactive/g-xaxisLinear/blob/master/images/numTicks.png)
+
+### Short ticks
+
+<b> Note </b> When an offset greater that zero is specified the style of the ticks is changed from the standard tick style to the baseline style. In the case of the wed frame this changes the line from a dotted to a solid line
+
+```
+let myXAxis = gAxis.xaxisLinear;
+
+myXAxis
+    .range([0,currentFrame.dimension().width])
+    .tickSize(currentFrame.rem())
+    .offset(currentFrame.dimension().height)
+
+
+currentFrame.plot()
+	.call(myXAxis);
+```
+![alt tag](https://github.com/ft-interactive/g-xaxisLinear/blob/master/images/short.png)
 
 
 
