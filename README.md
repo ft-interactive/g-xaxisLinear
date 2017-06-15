@@ -104,6 +104,10 @@ currentFrame.plot()
 ```
 ![alt tag](https://github.com/ft-interactive/g-xaxisLinear/blob/master/images/short.png)
 
+## Script tags
+
+Explanation on script tags to come
+
 
 
 
