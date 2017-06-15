@@ -68,6 +68,24 @@ currentFrame.plot()
 
 ## Examples
 
+### Nember of ticks
+
+```
+let myXAxis = gAxis.xaxisLinear;
+
+myXAxis
+    .range([0,currentFrame.dimension().width])
+    .tickSize(currentFrame.dimension().height)
+    .numTicks(10);
+
+currentFrame.plot()
+	.call(myXAxis);
+```
+
+![alt tag](https://github.com/ft-interactive/g-xaxisLinear/blob/master/images/numTicks.png)
+
+
+
 
 
 
