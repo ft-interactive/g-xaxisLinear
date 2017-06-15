@@ -56,7 +56,7 @@ currentFrame.plot()
 ```
 ![alt tag](https://github.com/ft-interactive/g-xaxisLinear/blob/master/images/position.png)
 
-### API reference
+## API reference
 
 #myAxis<b>.domain([Array])</b> defines the axis domain in the same way as you would when creating a normal d3.scaleLinear(). If no <b>.domain()</b> is defined the default is [0,100]
 
@@ -66,7 +66,7 @@ currentFrame.plot()
 
 #myAxis<b>.numTicks([Number])</b> Dtermines how many ticks and therefore the label interval of the axis
 
-### Examples
+## Examples
 
 
 
