@@ -11,6 +11,11 @@ The FT axis styles---add the folowwing link in your index file header
 
 The [d3 library](https://d3js.org/) is already installed in the build
 
+## Before starting
+
+<b>Note</b> The <b>.range()</b> of the x-axis should be determind in part by the <b>.labelWidth()</b> of the y-axis, so it is advisable to ad your y-axis first. See the secton on positioning at [yaxisLinear](https://github.com/ft-interactive/g-yaxislinear).
+
+
 ## Installing
 ### Manually install
 
@@ -20,7 +25,6 @@ Add the following line to the header of you index.html file.
 <script src="To come"> </script>
 
 ```
-
 
 ### NPM install
 Not yet deployed
@@ -51,3 +55,20 @@ currentFrame.plot()
 	.call(myXAxis);
 ```
 ![alt tag](https://github.com/ft-interactive/g-xaxisLinear/blob/master/images/position.png)
+
+### API reference
+
+#myAxis<b>.domain([Array])</b> defines the axis domain in the same way as you would when creating a normal d3.scaleLinear(). If no <b>.domain()</b> is defined the default is [0,100]
+
+#myAxis<b>.range([Array])</b> defines the axis  range in the same way as you would when creating a normal d3.scaleLinear(). If no <b>.range()</b> is defined the default is [0,220]). This is usually set to the width of the current frame and donme after the y-axis has been called. See the secton on positioning at [yaxisLinear](https://github.com/ft-interactive/g-yaxislinear).
+
+#myAxis<b>.offset([Number])</b> Defines the distance the x-axis is positioned from the top of its container but is nearly always set to zero on a linear type axis as the <b>.tickSize() </b> is used to determine the correct positioning of the axis within the current. It is used when short ticks are required
+
+#myAxis<b>.numTicks([Number])</b> Dtermines how many ticks and therefore the label interval of the axis
+
+### Examples
+
+
+
+
+
